@@ -9,10 +9,10 @@ const locations = [
 export default function LocationsSection() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1216px] px-8 py-20 lg:py-40">
-        <div className="flex flex-col items-center gap-20">
+      <div className="mx-auto max-w-[1216px] px-4 py-20 sm:px-8 lg:py-40">
+        <div className="flex flex-col items-center gap-12 lg:gap-20">
           <div className="flex flex-col items-center gap-3">
-            <h2 className="font-[family-name:var(--font-hanken)] text-4xl font-semibold tracking-tight text-gray-950 lg:text-[52px] lg:leading-[1.6]">
+            <h2 className="text-center font-[family-name:var(--font-hanken)] text-3xl font-semibold tracking-tight text-gray-950 sm:text-4xl lg:text-[52px] lg:leading-[1.6]">
               Our Locations
             </h2>
             <Image src="/images/underline-2.svg" alt="" width={122} height={4} />
@@ -21,8 +21,8 @@ export default function LocationsSection() {
             {locations.map((location, index) => (
               <div
                 key={location.name}
-                className={`group relative h-[400px] overflow-hidden lg:h-[500px] ${
-                  index === 0 ? "flex-1" : "lg:w-[404px]"
+                className={`group relative h-[250px] w-full overflow-hidden sm:h-[400px] lg:h-[500px] ${
+                  index === 0 ? "lg:flex-1" : "lg:w-[404px]"
                 }`}
               >
                 <Image

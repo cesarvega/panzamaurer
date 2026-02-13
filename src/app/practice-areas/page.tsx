@@ -110,7 +110,7 @@ export default function PracticeAreasPage() {
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Navbar />
-      <main className="w-full pt-[109px]">
+      <main className="w-full pt-[145px] lg:pt-[109px]">
         <PageHero
           title="Practice Areas"
           breadcrumbs={[

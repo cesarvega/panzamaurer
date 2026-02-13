@@ -899,7 +899,7 @@ export default async function AttorneyProfilePage({
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Navbar />
-      <main className="w-full pt-[109px]">
+      <main className="w-full pt-[145px] lg:pt-[109px]">
         {/* Profile Hero */}
         <section
           className="relative w-full overflow-hidden"
@@ -908,19 +908,29 @@ export default async function AttorneyProfilePage({
               "linear-gradient(-57.8deg, rgba(100,116,139,0) 57.5%, rgba(0,105,255,0.1) 103.2%), linear-gradient(90deg, rgba(255,255,255,0) 20.3%, rgba(255,255,255,0.7) 85.8%), linear-gradient(90deg, rgba(229,233,241,0.8) 0%, rgba(229,233,241,0.8) 100%), linear-gradient(90deg, #f3f4f6 0%, #f3f4f6 100%)",
           }}
         >
-          <div className="mx-auto flex max-w-[1440px] items-end px-8 pb-0 pt-16 lg:px-28">
-            <div className="flex flex-1 flex-col gap-2 pb-12">
-              <div className="mb-2 h-[2px] w-[80px] bg-primary-red" />
+          <div className="mx-auto flex max-w-[1440px] flex-col items-center px-6 pb-0 pt-16 sm:px-8 lg:flex-row lg:items-end lg:px-28">
+            <div className="flex flex-1 flex-col gap-2 pb-6 text-center lg:pb-12 lg:text-left">
+              <div className="mx-auto mb-2 h-[2px] w-[80px] bg-primary-red lg:mx-0" />
               <span className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[3px] text-slate-500">
                 Profile
               </span>
-              <h1 className="font-[family-name:var(--font-hanken)] text-4xl font-semibold text-slate-800 lg:text-[52px] lg:leading-[1.3]">
+              <h1 className="font-[family-name:var(--font-hanken)] text-3xl font-semibold text-slate-800 sm:text-4xl lg:text-[52px] lg:leading-[1.3]">
                 {attorney.name}
               </h1>
               <p className="font-[family-name:var(--font-noto)] text-lg text-slate-500">
                 {attorney.role}
               </p>
             </div>
+            {/* Mobile profile image — below name, above breadcrumbs */}
+            <div className="relative mb-0 h-[250px] w-[220px] flex-shrink-0 lg:hidden">
+              <Image
+                src={`/images/attorneys/${attorney.image}`}
+                alt={attorney.name}
+                fill
+                className="rounded-t-xl object-cover object-top"
+              />
+            </div>
+            {/* Desktop profile image */}
             <div className="relative hidden h-[280px] w-[240px] flex-shrink-0 lg:block">
               <Image
                 src={`/images/attorneys/${attorney.image}`}

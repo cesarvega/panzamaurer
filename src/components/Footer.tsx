@@ -5,7 +5,7 @@ const footerNav = [
   { label: "About The Firm", href: "/about" },
   { label: "Professionals", href: "/attorneys" },
   { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Government Relations", href: "/practice-areas" },
+  { label: "Government Relations", href: "/practice-areas/government-relations" },
   { label: "News", href: "/news" },
   { label: "Locations", href: "/locations" },
   { label: "Contact Us", href: "/contact" },

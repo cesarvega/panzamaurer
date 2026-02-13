@@ -31,8 +31,8 @@ export default function AboutPage() {
             - Gap between columns: 747 - 112 - 520 = 115px
             - Right column top offset vs left: 179 - 89 = 90px
           */}
-          <div className="relative mx-auto max-w-[1440px] px-[112px] pt-[89px] pb-[89px]">
-            <div className="flex flex-col gap-[115px] lg:flex-row">
+          <div className="relative mx-auto max-w-[1440px] px-6 pt-[89px] pb-[89px] md:px-12 lg:px-[112px]">
+            <div className="flex flex-col gap-12 lg:flex-row lg:gap-[115px]">
               {/* Left column: w=520px */}
               <div className="w-full flex-shrink-0 lg:w-[520px]">
                 {/* Title + underline: gap=25px between them */}
