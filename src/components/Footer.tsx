@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Row 3: Copyright */}
           <p className="font-[family-name:var(--font-noto)] text-base font-normal leading-6 text-gray-950">
-            Copyright &copy; Panza, Maurer &amp; Maynard 2025 All Rights
+            Copyright &copy; Panza, Maurer &amp; Maynard 2026 All Rights
             Reserved.
           </p>
         </div>
