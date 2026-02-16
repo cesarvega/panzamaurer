@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const teamMembers = [
-  { name: "Thomas F. Panza", role: "Founding Partner", image: "/images/attorneys/thomas-f-panza.png" },
-  { name: "Susan Horovitz Maurer", role: "Founding Partner", image: "/images/attorneys/susan-horovitz-maurer.png" },
-  { name: "Dana Panza Macdonald", role: "Managing Partner", image: "/images/attorneys/dana-panza-macdonald.png" },
-  { name: "Benjamin P. Bean", role: "Partner", image: "/images/attorneys/benjamin-p-bean.png" },
-  { name: "Jennifer Maurer Bean", role: "Partner", image: "/images/attorneys/jennifer-maurer-bean.png" },
-  { name: "Jon Harris Maurer", role: "Partner", image: "/images/attorneys/jon-harris-maurer.png" },
+  { name: "Thomas F. Panza", role: "Founding Partner", image: "/images/attorneys/thomas-f-panza.png", slug: "thomas-f-panza" },
+  { name: "Susan Horovitz Maurer", role: "Founding Partner", image: "/images/attorneys/susan-horovitz-maurer.png", slug: "susan-horovitz-maurer" },
+  { name: "Dana Panza Macdonald", role: "Managing Partner", image: "/images/attorneys/dana-panza-macdonald.png", slug: "dana-panza-macdonald" },
+  { name: "Benjamin P. Bean", role: "Partner", image: "/images/attorneys/benjamin-p-bean.png", slug: "benjamin-p-bean" },
+  { name: "Jennifer Maurer Bean", role: "Partner", image: "/images/attorneys/jennifer-maurer-bean.png", slug: "jennifer-maurer-bean" },
+  { name: "Jon Harris Maurer", role: "Partner", image: "/images/attorneys/jon-harris-maurer.png", slug: "jon-harris-maurer" },
 ];
 
 export default function Team() {
@@ -76,9 +77,10 @@ export default function Team() {
             {/* Team Cards */}
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {visibleMembers.map((member) => (
-                <div
+                <Link
                   key={member.name}
-                  className="group relative h-[500px] overflow-hidden rounded-2xl"
+                  href={`/attorneys/${member.slug}`}
+                  className="group relative block h-[500px] overflow-hidden rounded-2xl"
                 >
                   <Image
                     src={member.image}
@@ -105,7 +107,7 @@ export default function Team() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
