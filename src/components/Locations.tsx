@@ -38,8 +38,8 @@ export default function Locations() {
             {locations.map((location, index) => (
               <div
                 key={location.name}
-                className={`group relative h-[400px] overflow-hidden lg:h-[500px] ${
-                  index === 0 ? "flex-1" : "lg:w-[404px]"
+                className={`group relative h-[250px] w-full overflow-hidden sm:h-[400px] lg:h-[500px] ${
+                  index === 0 ? "lg:flex-1" : "lg:w-[404px]"
                 }`}
               >
                 <Image
