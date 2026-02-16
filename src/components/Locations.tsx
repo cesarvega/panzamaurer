@@ -46,7 +46,7 @@ export default function Locations() {
                   src={location.image}
                   alt={location.name}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
                 />
                 {/* Gradient overlay */}
                 <div
