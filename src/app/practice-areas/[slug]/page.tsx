@@ -235,7 +235,7 @@ export default async function PracticeAreaDetailPage({
                   {
                     name: "Thomas F. Panza",
                     role: "Founding Partner",
-                    image: "thomas-f-panza.png",
+                    image: "thomas-f-panza-bw.png",
                     slug: "thomas-f-panza",
                   },
                   {
@@ -247,7 +247,7 @@ export default async function PracticeAreaDetailPage({
                   {
                     name: "Jennifer Maurer Bean",
                     role: "Partner",
-                    image: "jennifer-maurer-bean.png",
+                    image: "jennifer-maurer-bean-bw.png",
                     slug: "jennifer-maurer-bean",
                   },
                 ].map((member) => (
