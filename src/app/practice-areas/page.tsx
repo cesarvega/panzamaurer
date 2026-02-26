@@ -55,9 +55,9 @@ const practiceAreas = [
       "Our intellectual property attorneys have extensive experience in client filing and procuring trademarks and copyrights.",
   },
   {
-    title: "Academic Law",
+    title: "Education Law",
     description:
-      "Panza Maurer experience and practice includes consultation and representation in all areas of education industry.",
+      "Panza Maurer provides comprehensive legal counsel to colleges, universities, and K\u201312 institutions across a broad spectrum of issues unique to the education sector.",
   },
   {
     title: "Gaming & Hospitality",
@@ -68,11 +68,6 @@ const practiceAreas = [
     title: "Strategic Planning",
     description:
       "Panza Maurer Law Firm provides government relations consulting and strategic planning to firm clients.",
-  },
-  {
-    title: "Government Relations",
-    description:
-      "The firm has experience in drafting proposed legislation and, whenever monitoring, defending state constitutional challenges.",
   },
   {
     title: "Labor | Employment",
@@ -98,11 +93,6 @@ const practiceAreas = [
     title: "Medical Marijuana",
     description:
       "Our firm assists with navigating the governmental channels to obtain licenses.",
-  },
-  {
-    title: "Other Practice Areas",
-    description:
-      "Structured to provide diversified businesses responsive service, assembling an experienced team of attorneys.",
   },
 ];
 

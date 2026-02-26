@@ -1,22 +1,23 @@
 import Image from "next/image";
 
 const practiceAreas = [
-  "Administrative Law",
-  "Antitrust Law",
-  "Appellate Law",
-  "Construction Law",
-  "Corporate Health Law",
-  "Employment Law",
-  "Government Regulatory Law",
-  "Healthcare Law",
-  "Land Use Development Law",
+  "Administrative | Regulatory Law",
+  "Healthcare",
+  "Compliance",
+  "Corporate | Transactional",
   "Litigation",
-  "Mortgage Law",
-  "Real Estate Law",
-  "Securities Law",
-  "Tax Law",
-  "Technology Law",
-  "Estate Planning & Consulting",
+  "Land Use | Environmental",
+  "Trusts & Estates",
+  "Technology | IT",
+  "Intellectual Property",
+  "Education Law",
+  "Gaming & Hospitality",
+  "Strategic Planning",
+  "Labor | Employment",
+  "Procurement",
+  "Real Property",
+  "Receivership | Conservatorship",
+  "Medical Marijuana",
 ];
 
 export default function PracticeAreas() {

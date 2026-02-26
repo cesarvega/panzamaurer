@@ -1,16 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const footerNav = [
-  { label: "About The Firm", href: "/about" },
-  { label: "Professionals", href: "/attorneys" },
-  { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Government Relations", href: "/practice-areas/government-relations" },
-  { label: "News", href: "/news" },
-  { label: "Locations", href: "/locations" },
-  { label: "Contact Us", href: "/contact" },
-];
-
 const locationLinks = [
   {
     name: "Tallahassee",
@@ -42,49 +32,36 @@ const locationLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white">
+    <footer className="w-full bg-dark-navy">
       <div className="mx-auto max-w-[1440px] px-8 py-20 lg:px-28 lg:py-32">
         <div className="flex flex-col gap-20">
-          {/* Row 1: Logo + Nav */}
-          <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
-            <Link href="/" className="flex-shrink-0">
-              <Image
-                src="/images/footer-logo.svg"
-                alt="Panza Maurer"
-                width={333}
-                height={64}
-              />
-            </Link>
-            <div className="flex flex-wrap items-center gap-7 lg:flex-nowrap">
-              {footerNav.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="whitespace-nowrap font-[family-name:var(--font-noto)] text-base font-semibold leading-[26px] text-gray-950 transition-colors hover:text-primary-red"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/images/footer-logo.svg"
+              alt="Panza Maurer"
+              width={333}
+              height={64}
+            />
+          </Link>
 
-          {/* Row 2: Location columns */}
+          {/* Location columns */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {locationLinks.map((loc) => (
               <div key={loc.name} className="flex flex-col gap-4">
-                <h3 className="font-[family-name:var(--font-noto)] text-2xl font-medium leading-[34px] text-gray-950">
+                <h3 className="font-[family-name:var(--font-noto)] text-2xl font-medium leading-[34px] text-white">
                   {loc.name}
                 </h3>
                 <div className="flex flex-col gap-1">
                   {loc.address.map((line, i) => (
                     <p
                       key={i}
-                      className="font-[family-name:var(--font-noto)] text-base font-normal leading-[26px] text-gray-950"
+                      className="font-[family-name:var(--font-noto)] text-base font-normal leading-[26px] text-gray-300"
                     >
                       {line}
                     </p>
                   ))}
-                  <p className="mt-1 font-[family-name:var(--font-noto)] text-base font-normal leading-[26px] text-gray-950">
+                  <p className="mt-1 font-[family-name:var(--font-noto)] text-base font-normal leading-[26px] text-gray-300">
                     {loc.phone}
                   </p>
                 </div>
@@ -92,8 +69,8 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Row 3: Copyright */}
-          <p className="font-[family-name:var(--font-noto)] text-base font-normal leading-6 text-gray-950">
+          {/* Copyright */}
+          <p className="font-[family-name:var(--font-noto)] text-base font-normal leading-6 text-gray-400">
             Copyright &copy; Panza, Maurer &amp; Maynard 2026 All Rights
             Reserved.
           </p>

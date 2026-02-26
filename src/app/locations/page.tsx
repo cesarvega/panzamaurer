@@ -72,7 +72,12 @@ export default function LocationsPage() {
                     <h2 className="font-[family-name:var(--font-hanken)] text-3xl font-semibold text-slate-600 lg:text-[42px] lg:leading-[50px]">
                       {office.name}
                     </h2>
-                    <div className="h-[2px] w-[168px] bg-primary-red" />
+                    <Image
+                      src="/images/underline-1.svg"
+                      alt=""
+                      width={168}
+                      height={4}
+                    />
 
                     <div className="mt-2 flex flex-col gap-1">
                       <div className="flex items-start gap-3">
@@ -106,20 +111,6 @@ export default function LocationsPage() {
                       </div>
                     </div>
 
-                    <div className="mt-4 flex gap-4">
-                      <a
-                        href={`tel:${office.phone.replace(/[^\d]/g, "").slice(0, 10)}`}
-                        className="inline-flex items-center justify-center rounded-lg bg-primary-red px-5 py-2.5 text-base font-semibold text-white transition-colors hover:bg-red-800"
-                      >
-                        Call Now
-                      </a>
-                      <a
-                        href="#"
-                        className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-2.5 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-50"
-                      >
-                        Get Directions
-                      </a>
-                    </div>
                   </div>
                 </div>
               ))}

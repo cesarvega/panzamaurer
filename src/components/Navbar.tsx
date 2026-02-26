@@ -14,7 +14,7 @@ const practiceAreaItems = [
   { label: "Trusts & Estates", slug: "trusts--estates" },
   { label: "Technology | IT", slug: "technology--it" },
   { label: "Intellectual Property", slug: "intellectual-property" },
-  { label: "Academic Law", slug: "academic-law" },
+  { label: "Education Law", slug: "education-law" },
   { label: "Gaming & Hospitality", slug: "gaming--hospitality" },
   { label: "Strategic Planning", slug: "strategic-planning" },
   { label: "Labor | Employment", slug: "labor--employment" },
@@ -26,13 +26,12 @@ const practiceAreaItems = [
 ];
 
 const navItems = [
-  { label: "About The Firm", href: "/about", hasDropdown: false },
+  { label: "Home", href: "/", hasDropdown: false },
   { label: "Professionals", href: "/attorneys", hasDropdown: false },
   { label: "Practice Areas", href: "/practice-areas", hasDropdown: true },
   { label: "Government Relations", href: "/practice-areas/government-relations", hasDropdown: false },
   { label: "News", href: "/news", hasDropdown: false },
   { label: "Locations", href: "/locations", hasDropdown: false },
-  { label: "Contact Us", href: "/contact", hasDropdown: false },
 ];
 
 export default function Navbar() {

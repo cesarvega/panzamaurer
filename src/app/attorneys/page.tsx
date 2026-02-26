@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
-import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -26,31 +25,25 @@ const partners: Attorney[] = [
   { name: "Jose Felix Diaz", role: "Partner", image: "jose-felix-diaz.png" },
   { name: "Lorraine Duthe", role: "Partner", image: "lorraine-duthe.png" },
   { name: "James H. Horton, IV", role: "Partner", image: "james-h-horton-iv.png" },
-  { name: "Kevin Z. Jacobs", role: "Partner", image: "kevin-z-jacobs.png" },
   { name: "Pamela M. Kane", role: "Partner", image: "pamela-kane.png" },
   { name: "Gregory L. McDermott", role: "Partner", image: "gregory-l-mcdermott.png" },
   { name: "Elizabeth L. Pedersen", role: "Founding Partner", image: "elizabeth-l-pedersen.png" },
-  { name: "Louise Wilhite St. Laurent", role: "Managing Partner", image: "louise-wilhite-st-laurent.png" },
-  { name: "Bradley Butler Jr.", role: "Partner", image: "bradley-butler-jr.png" },
-  { name: "Lindsay K. Erwin", role: "Partner", image: "lindsay-k-erwin.png" },
-  { name: "Samantha Evans Saltzburg", role: "Founding Partner", image: "samantha-evans-saltzburg.png" },
-  { name: "Matthew W. Costello", role: "Associate", image: "matthew-w-costello.png" },
-  { name: "Briana S. Eubanks", role: "Associate", image: "briana-s-eubanks.png" },
+  { name: "Louise Wilhite St. Laurent", role: "Partner", image: "louise-wilhite-st-laurent.png" },
+  { name: "Samantha Evans Saltzburg", role: "Senior Associate", image: "samantha-evans-saltzburg.png" },
   { name: "Jennifer K. Graner", role: "Associate", image: "jennifer-k-graner.png" },
-  { name: "Jon Harris Maurer", role: "Associate", image: "jon-harris-maurer.png" },
   { name: "Andrew L. Myers", role: "Associate", image: "andrew-l-myers.png" },
-  { name: "Gina P. Neal", role: "Associate", image: "gina-p-neal.png" },
   { name: "Trevor D. Scott", role: "Associate", image: "trevor-d-scott.png" },
-  { name: "Robert Alston", role: "Associate", image: "robert-alston.png" },
 ];
 
 const ofCounsel: Attorney[] = [
   { name: "Brian Ballard", role: "Of Counsel Attorney", image: "brian-ballard.png" },
   { name: "Brad Burleson", role: "Of Counsel Attorney", image: "brad-burleson.png" },
+  { name: "David Childs", role: "Of Counsel Attorney", image: "david-childs.png" },
   { name: "Jan Gorrie", role: "Of Counsel Attorney", image: "jan-gorrie.png" },
   { name: "Adrian Lukis", role: "Of Counsel Attorney", image: "adrian-lukis.png" },
   { name: "Syl Luks", role: "Of Counsel Attorney", image: "syl-luks.png" },
   { name: "Monica Rodriguez", role: "Of Counsel Attorney", image: "monica-rodriquez.png" },
+  { name: "Eileen Stuart", role: "Of Counsel Attorney", image: "eileen-stuart.png" },
   { name: "Abby Vail", role: "Of Counsel Attorney", image: "abby-vail.png" },
 ];
 
@@ -62,14 +55,15 @@ function AttorneyCard({ attorney }: { attorney: Attorney }) {
   return (
     <Link
       href={`/attorneys/${slug}`}
-      className="group overflow-hidden rounded-xl border border-slate-200"
+      className="group overflow-hidden rounded-xl border border-slate-200 bg-white"
     >
-      <div className="relative h-[340px] w-full overflow-hidden bg-gray-200">
+      <div className="relative aspect-square w-full overflow-hidden">
         <Image
           src={`/images/attorneys/${attorney.image}`}
           alt={attorney.name}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw"
+          className="object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </div>
       <div className="px-4 py-4">
@@ -121,8 +115,6 @@ export default function AttorneysPage() {
             </div>
           </div>
         </section>
-
-        <LocationsSection />
       </main>
       <Footer />
     </div>

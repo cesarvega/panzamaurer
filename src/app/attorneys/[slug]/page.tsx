@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
-import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 
 const attorneyData: Record<
@@ -459,39 +458,6 @@ const attorneyData: Record<
       },
     ],
   },
-  "kevin-z-jacobs": {
-    name: "Kevin Z. Jacobs",
-    firstName: "Kevin",
-    role: "Partner",
-    image: "kevin-z-jacobs.png",
-    education: [
-      "B.S. in Business Administration and Real Estate from University of Denver (2008)",
-      "J.D. from Nova Southeastern University, Shepard Broad College of Law (2012)",
-    ],
-    barAdmissions: ["Florida (2013)"],
-    courtAdmissions: [],
-    professionalMemberships: [
-      "Real Property, Probate, and Trust Law Section of the Florida Bar",
-      "Broward County Bar Association",
-      "Title Agent, First American Title Insurance Company",
-      "Kennedy Kids Foundation \u2014 Board Member",
-    ],
-    intro: "Kevin Z. Jacobs practices transactional law, representing businesses and commercial enterprises.",
-    sections: [
-      {
-        title: "Transactional Practice",
-        content: [
-          "Kevin focuses on corporate governance, joint ventures, private equity, business contracts, and residential and commercial transactions. His expertise lies in drafting, reviewing, and negotiating various contracts with meticulous attention to detail. Kevin represented private commercial real estate lenders, managing transactions including predevelopment, acquisition, and construction loans, in excess of $100M; strengthened asset management by reviewing and negotiating confidentiality agreements, broker agreements, and joint venture agreements.",
-        ],
-      },
-      {
-        title: "Community Leadership",
-        content: [
-          "Kevin proudly grows a mustache (albeit not very well) in support of Movember, each November, to raise funds and awareness about men's health, mental health issues, and suicide prevention. He also serves on the board of the Kennedy Kids Foundation, a charity dedicated to the development of programs and initiatives for the prevention of youth suicide.",
-        ],
-      },
-    ],
-  },
   "gregory-l-mcdermott": {
     name: "Gregory L. McDermott",
     firstName: "Gregory",
@@ -568,7 +534,7 @@ const attorneyData: Record<
   "louise-wilhite-st-laurent": {
     name: "Louise Wilhite St. Laurent",
     firstName: "Louise",
-    role: "Managing Partner",
+    role: "Partner",
     image: "louise-wilhite-st-laurent.png",
     education: [],
     barAdmissions: ["Florida"],
@@ -640,7 +606,7 @@ const attorneyData: Record<
   "samantha-evans-saltzburg": {
     name: "Samantha Evans Saltzburg",
     firstName: "Samantha",
-    role: "Founding Partner",
+    role: "Senior Associate",
     image: "samantha-evans-saltzburg.png",
     education: [
       "J.D., magna cum laude, from Nova Southeastern University, Shepard Broad College of Law",
@@ -671,35 +637,6 @@ const attorneyData: Record<
         title: "Education and Background",
         content: [
           "Sam earned her Juris Doctor, magna cum laude, at Nova Southeastern University, Shepard Broad College of Law and a Bachelor of Science at Nova Southeastern University, School of Business and Entrepreneurship. Sam has published articles in The Florida Bar Journal, Vol. 91, No. 8 and The Public Interest Journal, Vol. 5, Issue #2.",
-        ],
-      },
-    ],
-  },
-  "matthew-w-costello": {
-    name: "Matthew W. Costello",
-    firstName: "Matthew",
-    role: "Associate",
-    image: "matthew-w-costello.png",
-    education: [
-      "J.D. from Florida International University School of Law",
-      "B.A. in Criminology from University of Florida",
-    ],
-    barAdmissions: ["Florida"],
-    courtAdmissions: [],
-    professionalMemberships: [],
-    intro: "Matthew Costello is an associate attorney focusing on civil litigation.",
-    sections: [
-      {
-        title: "Civil Litigation",
-        content: [
-          "Matthew represents individuals, businesses, and institutions in a wide range of disputes, including commercial conflicts, contract matters, and tort claims. His practice spans all phases of litigation, from pre-suit investigation and strategic planning to motion practice, discovery, and trial preparation.",
-        ],
-      },
-      {
-        title: "Education and Background",
-        content: [
-          "Prior to joining the firm, Matthew was employed as an Associate Attorney at a litigation law firm specializing in personal injury defense for high-profile clients.",
-          "Matthew earned his Juris Doctor from Florida International University School of Law. He also graduated from the University of Florida with a Bachelor of Arts in Criminology.",
         ],
       },
     ],
@@ -878,6 +815,173 @@ const attorneyData: Record<
       },
     ],
   },
+  "brian-ballard": {
+    name: "Brian Ballard",
+    firstName: "Brian",
+    role: "Of Counsel Attorney",
+    image: "brian-ballard.png",
+    education: [
+      "B.S. in Business Administration, University of Florida",
+      "J.D., University of Florida",
+    ],
+    barAdmissions: ["Florida"],
+    courtAdmissions: [],
+    professionalMemberships: [
+      "University of Florida Hall of Fame",
+    ],
+    intro: "Brian D. Ballard is the President and founder of Ballard Partners. A trusted counselor to presidential and gubernatorial candidates, as well as Fortune 100 leaders, Brian has spent his career navigating the intersection of government and business.",
+    sections: [
+      {
+        title: "Government & Political Leadership",
+        content: [
+          "Brian served as Chief of Staff in the Florida Governor's Office, where he developed environmental policy expertise and was the chief architect of Preservation 2000, then the largest public land acquisition program for environmentally sensitive areas in the U.S.",
+          "He chaired Florida Finance Committees for presidential nominees McCain, Romney, and Trump, and served as Vice Chairman of the Presidential Inaugural Committee. He currently sits on the Board of Trustees for the Trump Kennedy Center.",
+        ],
+      },
+      {
+        title: "Recognition",
+        content: [
+          "Brian has been featured in Vanity Fair's 'New Establishment' and Politico Playbook's '18 to Watch,' recognizing him as a top political insider and one of the most influential figures at the intersection of government and business.",
+        ],
+      },
+    ],
+  },
+  "brad-burleson": {
+    name: "Brad Burleson",
+    firstName: "Brad",
+    role: "Of Counsel Attorney",
+    image: "brad-burleson.png",
+    education: [
+      "J.D., Washington and Lee University School of Law",
+      "B.S. in Political Science, Vanderbilt University",
+    ],
+    barAdmissions: ["Florida"],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Brad Burleson represents clients across Florida before the legislative and executive branches of government, with a focus on transportation and infrastructure funding and policy, information technology, and tax policy and economic development.",
+    sections: [
+      {
+        title: "Legislative & Government Affairs",
+        content: [
+          "Brad helps IT companies and emerging technologies navigate Florida's regulatory framework and assists businesses on tax policy and economic development matters. He also helps clients secure federal and state appropriations.",
+          "Prior to joining Ballard Partners, Brad practiced law with an emphasis on transportation and construction litigation, representing highway contractors in disputes with the Florida Department of Transportation and airport authorities.",
+        ],
+      },
+      {
+        title: "Prior Experience",
+        content: [
+          "Brad previously worked as a legislative correspondent for U.S. Senator Richard Shelby and has experience drafting transportation-related legislation and agency specifications.",
+        ],
+      },
+    ],
+  },
+  "jan-gorrie": {
+    name: "Jan Gorrie",
+    firstName: "Jan",
+    role: "Of Counsel Attorney",
+    image: "jan-gorrie.png",
+    education: [
+      "B.S. in Biology, Duke University",
+      "M.P.H., University of South Florida",
+      "J.D., Stetson College of Law",
+    ],
+    barAdmissions: ["Florida", "Hillsborough County Bar Association"],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Jan Gorrie brings over 20 years of government affairs experience, specializing in healthcare law and policy. She has extensively lobbied Florida's Legislature and Executive Branch on behalf of hospital systems, medical colleges, insurance companies, and economic development organizations.",
+    sections: [
+      {
+        title: "Healthcare Law & Policy",
+        content: [
+          "Jan's work has focused on Medicaid reimbursement, healthcare access, and physician and hospital compensation. As a recognized transactional and administrative healthcare attorney, she regularly testifies before Florida's Agency for Health Care Administration and Department of Health on licensure, reimbursement, and provider matters.",
+        ],
+      },
+    ],
+  },
+  "adrian-lukis": {
+    name: "Adrian Lukis",
+    firstName: "Adrian",
+    role: "Of Counsel Attorney",
+    image: "adrian-lukis.png",
+    education: [
+      "B.A. from Florida State University",
+      "J.D. from Florida State University College of Law",
+    ],
+    barAdmissions: ["Florida"],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Adrian Lukis brings extensive experience in Florida government and political advisory work. Most notably, he served as Chief of Staff to Governor Ron DeSantis, where he managed the Executive Office and oversaw executive branch agencies during significant challenges including the Surfside building collapse and the COVID-19 Delta surge.",
+    sections: [
+      {
+        title: "Government Leadership",
+        content: [
+          "Prior to serving as Chief of Staff, Adrian held the role of Deputy Chief of Staff, supervising multiple state entities across health care, emergency management, environmental protection, economic development, and professional regulation.",
+          "His earlier career included work as a business law attorney specializing in mergers and acquisitions, plus roles with the Florida House of Representatives, the Republican Party of Florida, and Speaker Jose Oliva's office.",
+        ],
+      },
+    ],
+  },
+  "syl-luks": {
+    name: "Syl Luks",
+    firstName: "Syl",
+    role: "Of Counsel Attorney",
+    image: "syl-luks.png",
+    education: [],
+    barAdmissions: ["District of Columbia"],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Sylvester Lukis brings over 40 years of experience in Florida, national, and international policy and politics. As Senior Partner at Ballard Partners, he collaborates closely with firm founder Brian Ballard on strategic expansion across major U.S. markets and international locations.",
+    sections: [
+      {
+        title: "Federal Government Relations",
+        content: [
+          "Syl's practice focuses on U.S. government relations for foreign governments and private entities, emphasizing health care, immigration, trade, tariffs, and tax matters before the legislative and executive branches. He has represented clients before major federal departments including HHS, Justice, State, Transportation, Commerce, Treasury, Interior, and Homeland Security, as well as the Office of the U.S. Trade Representative.",
+        ],
+      },
+      {
+        title: "Prior Government Service",
+        content: [
+          "Syl's prior government service includes roles as Special Assistant to the General Counsel at HHS, Special Assistant U.S. Attorney in Washington D.C., and Assistant Director of a federal interagency task force at the State Department during the Mariel Boatlift. He served in the United States Air Force.",
+        ],
+      },
+    ],
+  },
+  "abby-vail": {
+    name: "Abby Vail",
+    firstName: "Abby",
+    role: "Of Counsel Attorney",
+    image: "abby-vail.png",
+    education: [
+      "B.S. in Communications, Florida State University",
+      "M.B.A., Florida State University",
+      "J.D., Florida State University",
+    ],
+    barAdmissions: ["Florida"],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Abby Vail has over 15 years of government affairs experience, providing political, strategic, and policy direction to clients before the legislative and executive branches of government. Her practice focuses on representing financial services clients in insurance, banking, consumer finance, securities, and fintech sectors.",
+    sections: [
+      {
+        title: "Government Affairs",
+        content: [
+          "Most recently, Abby served as Chief of Staff of the Florida Office of Financial Regulation, contributing to the Financial Technology Regulatory Sandbox passage and development. Previously, she held positions as Vice President of External Affairs for an international healthcare company and Senior Cabinet Aide to former Florida Chief Financial Officer Jeff Atwater.",
+          "She began her career at the Office of Insurance Regulation during significant property and casualty insurance reform following the 2004–2005 hurricane seasons.",
+        ],
+      },
+    ],
+  },
+  "sandra-harris": {
+    name: "Sandra Harris",
+    firstName: "Sandra",
+    role: "Government Relations",
+    image: "sandra-harris.png",
+    education: [],
+    barAdmissions: [],
+    courtAdmissions: [],
+    professionalMemberships: [],
+    intro: "Sandra Harris is a government relations professional at Panza Maurer, bringing extensive experience in legislative advocacy and public affairs.",
+    sections: [],
+  },
 };
 
 export function generateStaticParams() {
@@ -910,7 +1014,13 @@ export default async function AttorneyProfilePage({
         >
           <div className="mx-auto flex max-w-[1440px] flex-col items-center px-6 pb-0 pt-16 sm:px-8 lg:flex-row lg:items-end lg:px-28">
             <div className="flex flex-1 flex-col gap-2 pb-6 text-center lg:pb-12 lg:text-left">
-              <div className="mx-auto mb-2 h-[2px] w-[80px] bg-primary-red lg:mx-0" />
+              <Image
+                src="/images/underline-1.svg"
+                alt=""
+                width={80}
+                height={4}
+                className="lg:mx-0"
+              />
               <span className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[3px] text-slate-500">
                 Profile
               </span>
@@ -941,59 +1051,6 @@ export default async function AttorneyProfilePage({
             </div>
           </div>
         </section>
-
-        {/* Breadcrumbs */}
-        <div
-          className="border-t border-[#e7e9ed] py-[20px] backdrop-blur-[7px]"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(255,255,255,0) 58.8%, rgba(255,255,255,0.8) 100%), linear-gradient(-90deg, rgba(255,255,255,0) 38.1%, rgba(255,255,255,0.6) 100%), linear-gradient(90deg, rgba(227,237,253,0.6) 0%, rgba(227,237,253,0.6) 100%)",
-          }}
-        >
-          <nav className="mx-auto flex max-w-[1440px] items-center gap-3 px-8 text-[14px] lg:px-28">
-            <Link
-              href="/"
-              className="font-[family-name:var(--font-inter)] font-medium leading-[20px] text-slate-600 transition-colors hover:text-blue-700"
-            >
-              Home
-            </Link>
-            <svg
-              className="h-4 w-4 text-slate-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <Link
-              href="/attorneys"
-              className="font-[family-name:var(--font-inter)] font-medium leading-[20px] text-slate-600 transition-colors hover:text-blue-700"
-            >
-              Our Lawyers
-            </Link>
-            <svg
-              className="h-4 w-4 text-slate-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <span className="font-[family-name:var(--font-inter)] font-semibold leading-[20px] text-blue-700">
-              {attorney.name}
-            </span>
-          </nav>
-        </div>
 
         {/* Content */}
         <section className="w-full bg-white py-16">
@@ -1109,8 +1166,6 @@ export default async function AttorneyProfilePage({
             </div>
           </div>
         </section>
-
-        <LocationsSection />
       </main>
       <Footer />
     </div>

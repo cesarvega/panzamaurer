@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
-import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -142,7 +141,6 @@ export default function NewsPage() {
           </div>
         </section>
 
-        <LocationsSection />
       </main>
       <Footer />
     </div>

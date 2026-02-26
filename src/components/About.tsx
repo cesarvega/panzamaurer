@@ -65,12 +65,6 @@ export default function About() {
               </p>
             </div>
 
-            <a
-              href="#contact"
-              className="mt-2 inline-flex w-fit items-center rounded-lg bg-white px-8 py-3.5 font-[family-name:var(--font-noto)] text-lg font-semibold tracking-wide text-gray-950 transition-colors hover:bg-gray-100"
-            >
-              Call Us Today
-            </a>
           </div>
         </div>
       </div>

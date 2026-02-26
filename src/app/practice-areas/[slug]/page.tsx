@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 
 const practiceAreaData: Record<
@@ -70,10 +69,10 @@ const practiceAreaData: Record<
   },
   "technology--it": {
     title: "Technology | IT",
-    heading: "Technology & Information Services Law",
+    heading: "Technology | IT",
     content: [
-      "At Panza Maurer our practice is structured to provide diversified businesses regulatory service in the rapidly evolving technology landscape. Our attorneys advise on data privacy, cybersecurity compliance, software licensing, and technology transactions.",
-      "We assist clients with information security policies, data breach response, HIPAA and FERPA compliance for technology systems, and negotiations involving technology vendors and service providers.",
+      "Panza Maurer provides strategic legal counsel on cybersecurity compliance and risk management. Our services include identifying applicable statutory and regulatory frameworks, conducting regulatory mapping (including under the Gramm-Leach-Bliley Act and the HIPAA Security Rule), developing and refining policies and procedures, and advising on coordinated implementation with internal IT personnel and external cybersecurity professionals.",
+      "We assist clients in benchmarking policies, controls, and documentation against NIST-aligned standards and other recognized frameworks to support defensible, risk-based compliance programs. Through this integrated approach, we help organizations strengthen their security posture while aligning operational practices with evolving legal and regulatory expectations.",
     ],
   },
   "intellectual-property": {
@@ -84,12 +83,13 @@ const practiceAreaData: Record<
       "Our practice encompasses trademark registration and enforcement, copyright protection, trade secret litigation, licensing agreements, and IP due diligence in corporate transactions.",
     ],
   },
-  "academic-law": {
-    title: "Academic Law",
-    heading: "Education & Academic Law",
+  "education-law": {
+    title: "Education Law",
+    heading: "Education Law",
     content: [
-      "Panza Maurer experience and practice includes consultation and representation in all areas of the education industry. Our attorneys serve as general counsel to universities and academic institutions, advising on regulatory compliance, student affairs, faculty matters, and institutional governance.",
-      "We handle matters involving Title IX compliance, accreditation, student conduct proceedings, ADA and Section 504 compliance, FERPA, academic dismissals, and employment issues unique to educational institutions.",
+      "Panza Maurer provides comprehensive legal counsel to colleges, universities, and K\u201312 institutions across a broad spectrum of issues unique to the education sector. We advise on matters involving student and employee misconduct, accreditation, tenure and promotion, institutional governance, compliance with federal funding requirements, student-athlete issues, and employment concerns specific to educational environments.",
+      "Our attorneys offer particular strength in proactive compliance and risk management, including student handbook review, employee policy development, and alignment with applicable state and federal laws. We routinely counsel institutions on compliance with the Americans with Disabilities Act and Section 504 of the Rehabilitation Act, Title IX, FERPA, the Clery Act, Title VI of the Civil Rights Act, and other federal and state anti-discrimination statutes, helping clients navigate complex regulatory frameworks with clarity and confidence.",
+      "The firm has also served as general counsel to major universities, providing strategic guidance at the highest levels of institutional leadership. From governance and long-term planning to regulatory investigations and dispute resolution, we partner with educational institutions to protect their missions and reputations. Our experience includes representing universities in matters before the U.S. Department of Education\u2019s Office for Civil Rights, conducting internal investigations, preparing institutional representatives for agency interviews, and defending related claims in administrative proceedings and litigation.",
     ],
   },
   "gaming--hospitality": {
@@ -156,14 +156,6 @@ const practiceAreaData: Record<
       "We advise clients on licensing applications, regulatory compliance, operational requirements, and the evolving legal landscape governing medical marijuana cultivation, processing, and distribution in Florida.",
     ],
   },
-  "other-practice-areas": {
-    title: "Other Practice Areas",
-    heading: "Additional Legal Services",
-    content: [
-      "Structured to provide diversified businesses responsive service, assembling an experienced team of attorneys. Panza Maurer's breadth of practice areas allows us to serve clients across a wide range of legal needs.",
-      "Our firm's collaborative approach ensures that clients benefit from the collective knowledge and experience of our entire team, regardless of the specific legal challenge they face.",
-    ],
-  },
 };
 
 const allPracticeAreas = Object.entries(practiceAreaData).map(
@@ -172,24 +164,6 @@ const allPracticeAreas = Object.entries(practiceAreaData).map(
     title: data.title,
   })
 );
-
-const relatedNews = [
-  {
-    title: "NSU Investiture",
-    slug: "nsu-investiture",
-    image: "/images/news/nsu-investiture.png",
-  },
-  {
-    title: "Congratulations – United States Attorney General Pam Bondi!",
-    slug: "congratulations-pam-bondi",
-    image: "/images/news/congratulations-pam-bondi.png",
-  },
-  {
-    title: "2024 Fort Lauderdale International Boat Show Opening",
-    slug: "fort-lauderdale-boat-show",
-    image: "/images/news/fort-lauderdale-boat-show.png",
-  },
-];
 
 export function generateStaticParams() {
   return Object.keys(practiceAreaData).map((slug) => ({ slug }));
@@ -236,58 +210,71 @@ export default async function PracticeAreaDetailPage({
                 <h1 className="font-[family-name:var(--font-hanken)] text-[28px] font-semibold leading-[1.3] tracking-[-0.52px] text-slate-600 sm:text-[36px] lg:text-[44px]">
                   {area.title}
                 </h1>
-                <div className="h-[2px] w-[200px] bg-primary-red sm:w-[293px]" />
+                <Image
+                  src="/images/underline-2.svg"
+                  alt=""
+                  width={293}
+                  height={4}
+                  className="w-[200px] sm:w-[293px]"
+                />
               </div>
             </div>
           </div>
 
-          {/* Breadcrumbs */}
-          <div
-            className="min-h-[62px] rounded-br-[24px] border-t border-[#e7e9ed] py-[20px] backdrop-blur-[7px]"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,0) 58.8%, rgba(255,255,255,0.8) 100%), linear-gradient(-90deg, rgba(255,255,255,0) 38.1%, rgba(255,255,255,0.6) 100%), linear-gradient(90deg, rgba(227,237,253,0.6) 0%, rgba(227,237,253,0.6) 100%)",
-            }}
-          >
-            <nav className="mx-auto flex max-w-[1440px] items-center gap-3 px-6 text-[14px] md:px-12 lg:px-[112px]">
-              {[
-                { label: "Home", href: "/" },
-                { label: "Practice Areas", href: "/practice-areas" },
-                { label: area.title },
-              ].map((crumb, i) => (
-                <span key={i} className="flex items-center gap-3">
-                  {i > 0 && (
-                    <svg
-                      className="h-4 w-4 text-slate-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  )}
-                  {crumb.href ? (
-                    <Link
-                      href={crumb.href}
-                      className="font-[family-name:var(--font-inter)] font-medium leading-[20px] text-slate-600 transition-colors hover:text-blue-700"
-                    >
-                      {crumb.label}
-                    </Link>
-                  ) : (
-                    <span className="max-w-[300px] truncate font-[family-name:var(--font-inter)] font-semibold leading-[20px] text-blue-700">
-                      {crumb.label}
-                    </span>
-                  )}
-                </span>
-              ))}
-            </nav>
-          </div>
         </section>
+
+        {/* Government Relations Team */}
+        {slug === "government-relations" && (
+          <section className="bg-white">
+            <div className="mx-auto max-w-[1440px] px-6 py-16 sm:px-8 lg:px-28">
+              <h2 className="mb-10 text-center font-[family-name:var(--font-hanken)] text-[28px] font-semibold text-gray-900 lg:text-[32px]">
+                Our Government Relations Team
+              </h2>
+              <div className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {[
+                  {
+                    name: "Thomas F. Panza",
+                    role: "Founding Partner",
+                    image: "thomas-f-panza.png",
+                    slug: "thomas-f-panza",
+                  },
+                  {
+                    name: "Sandra Harris",
+                    role: "Government Relations",
+                    image: "sandra-harris.png",
+                    slug: "sandra-harris",
+                  },
+                  {
+                    name: "Jennifer Maurer Bean",
+                    role: "Partner",
+                    image: "jennifer-maurer-bean.png",
+                    slug: "jennifer-maurer-bean",
+                  },
+                ].map((member) => (
+                  <Link
+                    key={member.slug}
+                    href={`/attorneys/${member.slug}`}
+                    className="group flex w-full max-w-[300px] flex-col items-center"
+                  >
+                    <div className="relative mb-4 aspect-square w-full overflow-hidden rounded-lg">
+                      <Image
+                        src={`/images/attorneys/${member.image}`}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, 300px"
+                        className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <h3 className="font-[family-name:var(--font-hanken)] text-lg font-semibold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm text-gray-600">{member.role}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Content */}
         <section className="bg-white">
@@ -343,44 +330,6 @@ export default async function PracticeAreaDetailPage({
           </div>
         </section>
 
-        {/* Related Articles */}
-        <section className="border-t border-gray-100 bg-white">
-          <div className="mx-auto max-w-[1440px] px-6 py-16 sm:px-8 lg:px-28">
-            <h2 className="mb-10 font-[family-name:var(--font-hanken)] text-[28px] font-semibold text-gray-950">
-              <span className="relative inline-block">
-                Related Articles
-                <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-primary-red" />
-              </span>
-            </h2>
-
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {relatedNews.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={`/news/${article.slug}`}
-                  className="group flex flex-col gap-4"
-                >
-                  <div className="relative h-[200px] overflow-hidden rounded-lg bg-gray-200">
-                    <Image
-                      src={article.image}
-                      alt={article.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <h3 className="text-base font-medium leading-6 text-gray-950">
-                    {article.title}
-                  </h3>
-                  <span className="text-sm font-medium text-primary-red">
-                    Read More
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <LocationsSection />
       </main>
       <Footer />
     </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
 import LocationsSection from "@/components/LocationsSection";
@@ -40,7 +41,13 @@ export default function AboutPage() {
                   <h2 className="font-[family-name:var(--font-hanken)] text-[36px] font-semibold leading-[40px] tracking-[-1.08px] text-slate-700">
                     Integrity. Reliability. Dedication.
                   </h2>
-                  <div className="mt-[25px] h-[2px] w-[171px] bg-primary-red" />
+                  <Image
+                    src="/images/underline-1.svg"
+                    alt=""
+                    width={171}
+                    height={4}
+                    className="mt-[25px]"
+                  />
                 </div>
 
                 {/* Body text: 16px, leading 28px, text-justify, black */}

@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 
 const allPosts = [
@@ -65,9 +63,6 @@ Above: Robert Bulfin, Jennifer Bean, Dana Macdonald, Elizabeth Pedersen, Trevor 
   },
 ];
 
-function getRelatedPosts(currentSlug: string) {
-  return allPosts.filter((p) => p.slug !== currentSlug).slice(0, 3);
-}
 
 export function generateStaticParams() {
   return allPosts.map((post) => ({ slug: post.slug }));
@@ -92,8 +87,6 @@ export default async function NewsArticlePage({
       </div>
     );
   }
-
-  const relatedPosts = getRelatedPosts(slug);
 
   return (
     <div className="flex min-h-screen flex-col items-center">
@@ -177,53 +170,6 @@ export default async function NewsArticlePage({
             </div>
           </div>
 
-          {/* Breadcrumbs */}
-          <div
-            className="h-[62px] rounded-br-[24px] border-t border-[#e7e9ed] py-[20px] backdrop-blur-[7px]"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,0) 58.8%, rgba(255,255,255,0.8) 100%), linear-gradient(-90deg, rgba(255,255,255,0) 38.1%, rgba(255,255,255,0.6) 100%), linear-gradient(90deg, rgba(227,237,253,0.6) 0%, rgba(227,237,253,0.6) 100%)",
-            }}
-          >
-            <nav className="mx-auto flex max-w-[1440px] items-center gap-3 px-8 text-[14px] lg:px-[112px]">
-              {[
-                { label: "Home", href: "/" },
-                { label: "News", href: "/news" },
-                { label: post.category, href: "/news" },
-                { label: post.title },
-              ].map((crumb, i) => (
-                <span key={i} className="flex items-center gap-3">
-                  {i > 0 && (
-                    <svg
-                      className="h-4 w-4 text-slate-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  )}
-                  {crumb.href ? (
-                    <Link
-                      href={crumb.href}
-                      className="font-[family-name:var(--font-inter)] font-medium leading-[20px] text-slate-600 transition-colors hover:text-blue-700"
-                    >
-                      {crumb.label}
-                    </Link>
-                  ) : (
-                    <span className="font-[family-name:var(--font-inter)] font-semibold leading-[20px] text-blue-700 truncate max-w-[300px]">
-                      {crumb.label}
-                    </span>
-                  )}
-                </span>
-              ))}
-            </nav>
-          </div>
         </section>
 
         {/* Article Content */}
@@ -248,44 +194,6 @@ export default async function NewsArticlePage({
           </div>
         </section>
 
-        {/* Related Articles */}
-        <section className="bg-white border-t border-gray-100">
-          <div className="mx-auto max-w-[1440px] px-8 py-16 lg:px-28">
-            <h2 className="mb-10 font-[family-name:var(--font-hanken)] text-[28px] font-semibold text-gray-950">
-              <span className="relative inline-block">
-                Related Articles
-                <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-primary-red" />
-              </span>
-            </h2>
-
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {relatedPosts.map((related) => (
-                <Link
-                  key={related.slug}
-                  href={`/news/${related.slug}`}
-                  className="group flex flex-col gap-4"
-                >
-                  <div className="relative h-[200px] overflow-hidden rounded-lg bg-gray-200">
-                    <Image
-                      src={related.image}
-                      alt={related.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <h3 className="text-base font-medium leading-6 text-gray-950">
-                    {related.title}
-                  </h3>
-                  <span className="text-sm font-medium text-primary-red">
-                    Read More
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <LocationsSection />
       </main>
       <Footer />
     </div>
