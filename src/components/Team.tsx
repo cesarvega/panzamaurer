@@ -10,7 +10,6 @@ const teamMembers = [
   { name: "Dana Panza Macdonald", role: "Managing Partner", image: "/images/attorneys/dana-panza-macdonald.png", slug: "dana-panza-macdonald" },
   { name: "Benjamin P. Bean", role: "Partner", image: "/images/attorneys/benjamin-p-bean.png", slug: "benjamin-p-bean" },
   { name: "Jennifer Maurer Bean", role: "Partner", image: "/images/attorneys/jennifer-maurer-bean.png", slug: "jennifer-maurer-bean" },
-  { name: "Jon Harris Maurer", role: "Partner", image: "/images/attorneys/jon-harris-maurer.png", slug: "jon-harris-maurer" },
 ];
 
 export default function Team() {

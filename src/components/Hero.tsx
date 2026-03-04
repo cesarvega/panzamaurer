@@ -39,11 +39,9 @@ export default function Hero() {
           </h1>
           <div className="mt-4 flex items-baseline gap-[15px]">
             <p className="font-[family-name:var(--font-noto)] text-[27px] font-medium leading-[40px] text-gray-50">
-              Representing Business, Regulated Industries,
-              <br />
-              and Institutions for more than{" "}
-              <span className="font-black">5</span>
-              <span className="font-bold">0 years.</span>
+              Representing businesses, regulated industries and institutions for more than{" "}
+              <span className="font-black">50</span>
+              <span className="font-bold"> years.</span>
             </p>
           </div>
         </div>

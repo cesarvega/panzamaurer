@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
@@ -8,52 +7,56 @@ export const metadata = {
   title: "News | Panza Maurer",
 };
 
-const featuredPost = {
-  title: "Leadership Broward Foundations's Fun Lunch",
-  excerpt:
-    'Panza Maurer congratulates our esteemed colleague, Gail Bulfin, on being honored at the Leadership Broward Foundation\'s "What is the 4-11?" Fun Lunch held at the Seminole Hard Rock Hotel & Casino.',
-  date: "April 15, 2025",
-  slug: "leadership-broward-fun-lunch",
-  image: "/images/news/leadership-broward-fun-lunch.png",
-};
-
 const posts = [
   {
-    title: "NSU Investiture",
-    date: "March 20, 2025",
-    slug: "nsu-investiture",
-    image: "/images/news/nsu-investiture.png",
+    title: "Client Alert: The One Big Beautiful Bill Act & Student Loans",
+    date: "December 12, 2025",
+    excerpt:
+      "The One Big Beautiful Bill Act (OBBBA) has created a significant financial hurdle for many undergraduate and graduate students across the country, due to its new regulations on student loan caps, reduction of repayment options, and increased compliance requirements for institutions of higher education.",
+    href: "https://www.panzamaurer.com/client-alert-the-one-big-beautiful-bill-act-student-loans/",
+    image: null,
   },
   {
-    title: "Congratulations – United States Attorney General Pam Bondi!",
-    date: "February 10, 2025",
-    slug: "congratulations-pam-bondi",
-    image: "/images/news/congratulations-pam-bondi.png",
+    title: "Eileen Stuart and David Childs Join Panza Maurer as Of Counsel",
+    date: "November 19, 2025",
+    excerpt:
+      "Panza Maurer proudly announces the addition of Eileen Stuart and David Childs as Of Counsel to the firm, bringing extensive expertise in government relations, policy development, and strategic communications.",
+    href: "https://www.panzamaurer.com/eileen-stuart-and-david-childs-join-panza-maurer-as-of-counsel/",
+    image: null,
   },
   {
-    title: "2024 Fort Lauderdale International Boat Show Opening",
-    date: "January 5, 2025",
-    slug: "fort-lauderdale-boat-show",
-    image: "/images/news/fort-lauderdale-boat-show.png",
-  },
-  {
-    title: "BSO Research Development and Training Center Tour",
-    date: "December 12, 2024",
-    slug: "bsd-research-tour",
-    image: "/images/news/bsd-research-tour.png",
+    title: "Founding Partners Present at University of Rome Medical School",
+    date: "November 12, 2025",
+    excerpt:
+      "Panza Maurer's founding partners recently visited the Università Campus Bio-Medico di Roma, an institution established with a vision to place the human person at the heart of biomedical sciences, to explore its mission and connect with staff and students.",
+    href: "https://www.panzamaurer.com/panza-maurer-founding-partners-present-at-university-of-rome-medical-school/",
+    image: null,
   },
   {
     title:
-      "Panza Maurer's Elizabeth Pedersen Appointed to The Board of Directors for Arc Broward and Barc Housing",
-    date: "November 8, 2024",
-    slug: "elizabeth-pedersen-board",
-    image: "/images/news/elizabeth-pedersen-board.png",
+      "Panza Maurer Partners Recognized in Florida Trend's 2025 Legal Elite Notable – Women Leaders in Law",
+    date: "November 12, 2025",
+    excerpt:
+      "Congratulations to Panza Maurer Managing Partner, Dana Panza Macdonald, and Partner, Elizabeth Pedersen, on their recognition in Florida Trend Media Company's Legal Elite Notable — Women Leaders in Law.",
+    href: "https://www.panzamaurer.com/panza-mauerer-partners-recognized-in-florida-trends-2025-legal-elite-notable-women-leaders-in-law/",
+    image: null,
   },
   {
-    title: "Leadership Florida Cornerstone Class 42 Program",
-    date: "October 15, 2024",
-    slug: "leadership-florida-class-42",
-    image: "/images/news/leadership-florida-class-42.png",
+    title: "Panza Maurer – A Sponsor of the 2025 Guy Harvey Foundation Love the Blue Gala",
+    date: "November 7, 2025",
+    excerpt:
+      "Panza Maurer was honored to sponsor and attend the 2025 Guy Harvey Foundation Love the Blue Gala, an inspiring evening dedicated to ocean conservation and education.",
+    href: "https://www.panzamaurer.com/35288-2/",
+    image: "/GHF-Gala-280x350.jpg",
+  },
+  {
+    title:
+      "Panza Maurer Participates in the 9th Annual Marine Research Hub of South Florida Summit at FLIBS",
+    date: "November 6, 2025",
+    excerpt:
+      "Panza Maurer was proud to participate in the 9th Annual Marine Research Hub of South Florida Summit, held in conjunction with the Fort Lauderdale International Boat Show (FLIBS).",
+    href: "https://www.panzamaurer.com/panza-maurer-participates-in-the-9th-annual-marine-research-hub-of-south-florida-summit-at-flibs/",
+    image: "/FLIBSCoral-Vita-350x233.jpg",
   },
 ];
 
@@ -72,75 +75,41 @@ export default function NewsPage() {
         />
 
         <section className="bg-white">
-          <div className="mx-auto max-w-[1440px] px-8 py-16 lg:px-28">
-            {/* Featured Post */}
-            <div className="mb-16 flex flex-col gap-8 overflow-hidden rounded-2xl border border-gray-200 lg:flex-row">
-              <div className="relative h-[300px] bg-gray-200 lg:h-auto lg:w-1/2">
-                <Image
-                  src={featuredPost.image}
-                  alt={featuredPost.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center gap-4 p-8">
-                <h2 className="font-[family-name:var(--font-hanken)] text-2xl font-semibold text-gray-950 lg:text-3xl">
-                  {featuredPost.title}
-                </h2>
-                <p className="leading-7 text-gray-600">{featuredPost.excerpt}</p>
-                <Link
-                  href={`/news/${featuredPost.slug}`}
-                  className="inline-flex w-fit items-center rounded-lg bg-primary-red px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-red-800"
-                >
-                  Read more
-                </Link>
-              </div>
-            </div>
-
-            {/* Post Grid */}
+          <div className="mx-auto max-w-[1440px] px-8 py-12 lg:px-28">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (
-                <Link
-                  key={post.slug}
-                  href={`/news/${post.slug}`}
-                  className="group flex flex-col gap-4"
+                <a
+                  key={post.href}
+                  href={post.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col gap-4 overflow-hidden rounded-xl border border-gray-200 transition-shadow hover:shadow-md"
                 >
-                  <div className="relative h-[200px] overflow-hidden rounded-lg bg-gray-200">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
+                  {post.image && (
+                    <div className="relative h-[200px] w-full overflow-hidden bg-gray-100">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col gap-3 p-6">
+                    <p className="text-sm font-medium text-gray-400">{post.date}</p>
+                    <h3 className="font-[family-name:var(--font-hanken)] text-lg font-semibold leading-snug text-gray-950">
+                      {post.title}
+                    </h3>
+                    <p className="flex-1 text-sm leading-6 text-gray-600">{post.excerpt}</p>
+                    <span className="mt-2 text-sm font-semibold text-primary-red transition-colors group-hover:text-red-800">
+                      Read More →
+                    </span>
                   </div>
-                  <h3 className="text-base font-medium leading-6 text-gray-950">
-                    {post.title}
-                  </h3>
-                  <span className="text-sm font-medium text-primary-red">
-                    Read More
-                  </span>
-                </Link>
-              ))}
-            </div>
-
-            {/* Pagination */}
-            <div className="mt-12 flex items-center gap-3">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button
-                  key={n}
-                  className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-medium ${
-                    n === 1
-                      ? "bg-primary-dark text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                  }`}
-                >
-                  {n}
-                </button>
+                </a>
               ))}
             </div>
           </div>
         </section>
-
       </main>
       <Footer />
     </div>

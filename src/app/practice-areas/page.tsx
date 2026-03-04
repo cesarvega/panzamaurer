@@ -110,8 +110,8 @@ export default function PracticeAreasPage() {
         />
 
         <section className="bg-white">
-          <div className="mx-auto max-w-[1440px] px-8 py-16 lg:px-28">
-            <h2 className="mb-10 font-[family-name:var(--font-hanken)] text-3xl font-semibold text-slate-700">
+          <div className="mx-auto max-w-[1440px] px-8 py-8 lg:px-28">
+            <h2 className="mb-8 font-[family-name:var(--font-hanken)] text-3xl font-semibold text-slate-700">
               Industries | Cases We Handle
             </h2>
 

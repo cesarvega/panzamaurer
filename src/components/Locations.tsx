@@ -46,21 +46,21 @@ export default function Locations() {
                   src={location.image}
                   alt={location.name}
                   fill
-                  className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Gradient overlay */}
+                {/* Dark overlay that fades on hover to reveal color */}
                 <div
-                  className="absolute inset-0"
+                  className="absolute inset-0 transition-opacity duration-500 group-hover:opacity-0"
                   style={{
-                    background:
-                      "linear-gradient(180deg, rgba(0,0,0,0) 7.8%, rgba(0,0,0,0.4) 100%)",
+                    background: "rgba(17, 24, 39, 0.52)",
                   }}
                 />
+                {/* Bottom gradient for text legibility */}
                 <div
                   className="absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(90deg, rgba(240,238,227,0.1) 0%, rgba(240,238,227,0.05) 50%, rgba(240,238,227,0.1) 100%)",
+                      "linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.55) 100%)",
                   }}
                 />
                 {/* Location name */}

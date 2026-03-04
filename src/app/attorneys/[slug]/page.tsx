@@ -536,8 +536,14 @@ const attorneyData: Record<
     firstName: "Louise",
     role: "Partner",
     image: "louise-wilhite-st-laurent.png",
-    education: [],
-    barAdmissions: ["Florida"],
+    education: [
+      "J.D., Florida State University, Cum Laude",
+      "B.A., Florida State University, Cum Laude",
+    ],
+    barAdmissions: [
+      "Florida",
+      "U.S. District Court for the Northern District of Florida",
+    ],
     courtAdmissions: [],
     professionalMemberships: [
       "Administrative Law Section of The Florida Bar \u2014 Immediate Past Chair",

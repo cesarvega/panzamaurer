@@ -42,7 +42,6 @@ export default function LocationsPage() {
       <main className="w-full pt-[145px] lg:pt-[109px]">
         <PageHero
           title="Our Locations"
-          subtitle="Every Second Counts! When you need serious counsel every second counts. Panza Maurer is ready to navigate a successful result. Our experienced strategic approach provides the foundation for every case we engage in. Please do not hesitate to contact us."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Locations" },

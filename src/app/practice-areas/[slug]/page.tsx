@@ -23,16 +23,20 @@ const practiceAreaData: Record<
     title: "Healthcare",
     heading: "Comprehensive Healthcare Legal Services",
     content: [
-      "Panza Maurer healthcare law practice focuses on the trends, initiatives and objectives set by health-related industries. Our attorneys have represented healthcare providers in virtually every area of health care law including regulatory compliance, licensing, reimbursement, fraud and abuse, certificate of need applications, and healthcare litigation.",
-      "The firm has represented major hospital systems, specialty care providers, hospice organizations, nursing facilities, and healthcare technology companies. Our attorneys navigate complex regulatory frameworks including HIPAA, Stark Law, Anti-Kickback Statute, and state healthcare regulations to protect our clients' interests and ensure compliance.",
+      "Today's healthcare providers are subject to an ever-increasing and constantly evolving number of regulatory requirements that require experienced legal counsel who have a clear understanding of the wide range of issues that providers may encounter. Our experienced health care lawyers deliver strategic, innovative, solution-driven legal counsel to healthcare providers, suppliers, and organizations navigating today's complex regulatory landscape. We emphasize prevention, compliance, and strategic regulatory planning to help our healthcare clients operate confidently, minimize risk, and adapt to the evolving demands of the healthcare regulatory landscape.",
+      "Our practice is built on deep experience in compliance, licensure, regulatory affairs, and healthcare business development and operations, including fraud and abuse, physician self-referral, HIPAA, false claims, professional disciplinary matters, medical staff matters, professional service agreements, as well as labor and employment issues. Our healthcare practice includes attorneys who have extensive experience in health care regulation and in state and federal government and administrative law. We collaborate with clients' corporate transactional, development, employment and government relations teams on litigation, regulatory, transactional and compliance matters to deliver integrated solutions tailored to each client's unique needs.",
+      "Our team has represented healthcare providers across the healthcare continuum, including hospitals and multi-hospital systems, physician practices and networks, long-term care, skilled nursing, and assisted living facilities, hospices, home health agencies, pharmacies and durable medical equipment providers, imaging centers and diagnostic facilities, trade associations and healthcare service providers, pharmacy benefit managers, and third party payors.",
+      "Panza Maurer assists clients with complex licensure and certification matters before state and federal regulatory bodies, including the Agency for Health Care Administration, the Department of Health, and the Centers for Medicare & Medicaid Services. Our licensure services include initial licensure and certification applications, Certificate of Need applications and litigation, change of ownership (CHOW) approvals, facility expansions and service line additions, regulatory compliance reviews, plan of correction development, and defense in administrative proceedings and enforcement actions.",
+      "Through our Tallahassee presence, Panza Maurer represents healthcare clients before the Florida Legislature and state agencies on legislative and regulatory matters. We monitor policy developments, advise on regulatory reform, and advocate for client interests in healthcare, insurance, and related sectors.",
     ],
   },
   compliance: {
     title: "Compliance",
-    heading: "Corporate Compliance & Governance",
+    heading: "Strategic Compliance & Risk Management",
     content: [
-      "Representing clients in compliance matters involving corporate governance, allegations of business and accounting fraud. Panza Maurer assists organizations in developing and implementing comprehensive compliance programs tailored to their specific industry and regulatory requirements.",
-      "Our compliance practice encompasses internal investigations, regulatory audits, policy development, and training programs. We help clients navigate the complex web of federal and state regulations to minimize risk and ensure organizational integrity.",
+      "At Panza Maurer, compliance is a core strength of our practice. Our attorneys advise clients on complex compliance matters involving corporate governance, regulatory oversight, and risk management. We understand that proactive compliance is one of the most valuable investments an organization can make.",
+      "We work closely with clients to minimize risks while supporting operational goals. From developing corporate-wide ethics and compliance programs to conducting internal audits and targeted investigations in high-risk areas, we provide practical, strategic guidance designed to protect both reputation and revenue. Sensitive matters are handled with precision, confidentiality, and sound legal judgment.",
+      "Our team helps organizations navigate a rapidly evolving regulatory environment. We provide timely alerts, training programs, and strategic advice to ensure clients remain compliant, manage risks effectively, and maintain strong corporate governance.",
     ],
   },
   "corporate--transactional": {
@@ -110,10 +114,12 @@ const practiceAreaData: Record<
   },
   "government-relations": {
     title: "Government Relations",
-    heading: "Legislative & Government Affairs",
+    heading: "Government Affairs & Strategic Advocacy",
     content: [
-      "The firm has experience in drafting proposed legislation and, whenever monitoring, defending state constitutional challenges. Panza Maurer's government relations practice provides comprehensive advocacy before state and federal government agencies and legislative bodies.",
-      "Our attorneys and government affairs professionals maintain relationships with key decision-makers throughout Florida's governmental landscape. We represent clients in legislative initiatives, appropriations matters, regulatory proceedings, and policy development.",
+      "Panza Maurer's government affairs practice is fully integrated within the firm's broader regulatory and administrative law platform. We provide strategic governmental relations counsel and advocacy services to clients navigating complex legislative, regulatory, and policy matters at the federal, state, regional, and local levels.",
+      "With offices in Tallahassee, Miami, and Fort Lauderdale, the firm is uniquely positioned to serve clients throughout Florida and beyond. Our Tallahassee presence in the state capital for more than 40 years provides direct access to the Legislature, executive agencies, and statewide regulatory bodies, while our South Florida offices allow us to effectively represent clients before regional and local governments and key economic centers.",
+      "Our attorneys and registered lobbyists have a unique understanding of government relations and maintain a longstanding reputation with key policymakers that span partisan lines. Firm attorneys and staff monitor and analyze legislative and regulatory developments, represent clients in agency rulemaking and administrative proceedings, and develop comprehensive advocacy strategies aligned with our clients' legal and business objectives.",
+      "Panza Maurer has experience drafting legislation and defending legislative enactments against state constitutional challenges, ensuring that policy objectives are supported by sound legal foundations. The firm is a member of the Florida Association of Professional Lobbyists.",
     ],
   },
   "labor--employment": {
@@ -136,8 +142,7 @@ const practiceAreaData: Record<
     title: "Real Property",
     heading: "Real Property Law",
     content: [
-      "Panza Maurer Law Firm Real Property Division is comprised of experienced transactional and litigation attorneys. We handle commercial and residential real estate transactions, including acquisitions, sales, financing, leasing, and development.",
-      "Our real property practice encompasses title review, due diligence, contract negotiation, closing services, and dispute resolution. We represent developers, investors, lenders, and property owners in complex real estate matters throughout Florida.",
+      "With more than fifty years of combined experience, our attorneys handle real estate sales contracts and leases, real estate litigation, land use issues, property management matters, foreclosures and related disputes. Our services include judicial and non-judicial foreclosures, loan modifications, mediations, post-judgment matters, evictions and writs of possession, drafting and negotiation of real estate contracts and leases, closings, and comprehensive land use and permitting representation. The firm also advises on zoning, code violations, association governance, and ongoing regulatory compliance to help clients minimize risk and protect their property interests.",
     ],
   },
   "receivership--conservatorship": {
@@ -201,8 +206,8 @@ export default async function PracticeAreaDetailPage({
               "linear-gradient(-57.8deg, rgba(100,116,139,0) 57.5%, rgba(0,105,255,0.1) 103.2%), linear-gradient(90deg, rgba(255,255,255,0) 20.3%, rgba(255,255,255,0.7) 85.8%), linear-gradient(90deg, rgba(229,233,241,0.8) 0%, rgba(229,233,241,0.8) 100%), linear-gradient(90deg, #f3f4f6 0%, #f3f4f6 100%)",
           }}
         >
-          <div className="mx-auto h-auto min-h-[250px] max-w-[1440px] pt-[40px] lg:h-[350px] lg:min-h-0 lg:pt-0">
-            <div className="flex h-full flex-col items-center justify-center px-6 py-10 lg:pt-[55px] lg:pb-0">
+          <div className="mx-auto h-auto min-h-[160px] max-w-[1440px] pt-[100px] lg:h-[216px] lg:min-h-0 lg:pt-0">
+            <div className="flex h-full flex-col items-center justify-center px-6 py-6 lg:pt-[36px] lg:pb-0">
               <div className="flex w-[800px] max-w-full flex-col items-center gap-[15px] text-center">
                 <span className="text-xs font-bold uppercase tracking-[3px] text-primary-red">
                   Practice Area
@@ -235,19 +240,19 @@ export default async function PracticeAreaDetailPage({
                   {
                     name: "Thomas F. Panza",
                     role: "Founding Partner",
-                    image: "thomas-f-panza-bw.png",
+                    image: "thomas-f-panza.png",
                     slug: "thomas-f-panza",
                   },
                   {
                     name: "Sandra Harris",
                     role: "Government Relations",
-                    image: "sandra-harris.png",
+                    image: "sandra-harris.jpeg",
                     slug: "sandra-harris",
                   },
                   {
                     name: "Jennifer Maurer Bean",
                     role: "Partner",
-                    image: "jennifer-maurer-bean-bw.png",
+                    image: "jennifer-maurer-bean.png",
                     slug: "jennifer-maurer-bean",
                   },
                 ].map((member) => (

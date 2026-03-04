@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="w-full bg-dark-navy">
       <div className="mx-auto flex max-w-[1280px] flex-col items-stretch lg:flex-row">
         {/* Left Image */}
-        <div className="relative h-[400px] w-full flex-shrink-0 lg:h-auto lg:w-[720px]">
+        <div className="relative h-[400px] w-full flex-shrink-0 lg:h-auto lg:w-[500px] lg:self-stretch">
           <Image
             src="/images/about-image.jpg"
             alt="Downtown Fort Lauderdale"
