@@ -1,18 +1,50 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
+const videos = [
+  "/assets/sea-view.mp4",
+  "/assets/cityview.mp4",
+  "/assets/townhouse.mp4",
+];
 
 export default function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([null, null, null]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => {
+        const next = (prev + 1) % videos.length;
+        const nextVideo = videoRefs.current[next];
+        if (nextVideo) {
+          nextVideo.currentTime = 0;
+          nextVideo.play().catch(() => {});
+        }
+        return next;
+      });
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative flex h-[803px] w-full items-end justify-center overflow-hidden bg-white">
-      {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover"
-      >
-        <source src="/edit_views_miami.mp4" type="video/mp4" />
-      </video>
+      {/* Background Videos with crossfade */}
+      {videos.map((src, i) => (
+        <video
+          key={src}
+          ref={(el) => { videoRefs.current[i] = el; }}
+          autoPlay={i === 0}
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000"
+          style={{ opacity: activeIndex === i ? 1 : 0 }}
+        >
+          <source src={src} type={src.endsWith(".mov") ? "video/quicktime" : "video/mp4"} />
+        </video>
+      ))}
 
       {/* Dark overlay gradient */}
       <div
@@ -29,7 +61,6 @@ export default function Hero() {
             "linear-gradient(-19.3deg, rgba(255,255,255,0) 71.6%, rgba(255,255,255,0.7) 99.6%)",
         }}
       />
-
 
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-[1280px] px-8 pb-28 pt-36">

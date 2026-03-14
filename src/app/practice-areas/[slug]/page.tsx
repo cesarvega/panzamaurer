@@ -100,8 +100,8 @@ const practiceAreaData: Record<
     title: "Gaming & Hospitality",
     heading: "Gaming & Hospitality Law",
     content: [
-      "Panza Maurer Law Firm attorneys have a strong practice area in gaming law, drawing upon our expertise in administrative law. We represent clients in the gaming and hospitality industries on matters involving licensing, regulatory compliance, and government affairs.",
-      "Our attorneys have experience with pari-mutuel operations, lottery matters, and emerging gaming regulations. We help clients navigate the complex intersection of gaming law, administrative regulations, and legislative developments.",
+      "Panza Maurer has represented lottery, gaming and hospitality clients in one of Florida's most highly regulated industries, with a concentrated focus on regulatory compliance, administrative advocacy, and legislative strategy. Our attorneys advise lottery operators worldwide, pari-mutuel operators, tribal entities, and hospitality businesses on licensing and permitting, statutory interpretation, rulemaking, and enforcement matters, helping clients navigate complex regulatory frameworks with clarity and confidence.",
+      "We regularly advocate on behalf of clients before the Florida Department of Administrative Hearings, the First District Court of Appeal, and the Florida Supreme Court, and work closely with regulators, executive agencies, and legislative bodies to protect and advance our clients' interests. Our practice combines administrative depth and government relations insight to deliver strategic, effective regulatory representation.",
     ],
   },
   "strategic-planning": {
@@ -126,16 +126,20 @@ const practiceAreaData: Record<
     title: "Labor | Employment",
     heading: "Labor & Employment Law",
     content: [
-      "Panza Maurer Law Firm is recognized for our expertise in the areas of Labor and Employment law. We represent employers and institutions in all aspects of employment law, from compliance counseling to litigation in state and federal courts.",
-      "Our employment practice covers wage and hour compliance, discrimination and harassment claims, wrongful termination, employee classification, FMLA and ADA compliance, workplace investigations, and proceedings before the EEOC and Florida Commission on Human Relations.",
+      "Panza Maurer is recognized for its depth of experience in labor and employment law, representing employers, businesses, and institutions in all aspects of workplace-related matters. We provide strategic counsel designed to minimize risk, ensure regulatory compliance, and protect our clients' operational and reputational interests.",
+      "Our practice includes wage and hour compliance, employee classification, discrimination and harassment claims, disciplinary actions, wrongful termination, workplace investigations, employee policies, contractual disputes, separation agreements, compensation arrangements, as well as leave and accommodation matters. The firm can provide training in employment law matters ranging from hiring practices, sexual harassment, religious and ADA accommodations, discipline, emerging employment law issues and other customized topics to meet the client's needs.",
+      "Panza Maurer routinely investigates as well as litigates cases involving discrimination in employment, Title VII of the 1964 Civil Rights Act, the Florida Civil Rights Act (FCRA), the Americans with Disabilities Act (ADA) and the Fair Labor Standards Act (FLSA). We routinely advise clients on sexual harassment and retaliation claims as well as involuntary terminations. The firm provides assistance in every step of the litigation process from an initial Equal Employment Opportunity Commission (EEOC)/local agency inquiry through trial and the appellate process and case resolution.",
+      "Panza Maurer enjoys an excellent reputation with EEOC offices, as well as the Labor and Employment Litigation Department of the Attorney General's Office. Our approach combines proactive counseling with effective advocacy, helping clients navigate complex employment challenges with confidence.",
     ],
   },
   procurement: {
     title: "Procurement",
     heading: "Government Procurement Law",
     content: [
-      "Panza Maurer Law Firm has extensive experience in handling large state and local bid and procurement matters for decades. We assist clients throughout the competitive bidding process, from RFP responses to bid protests and contract negotiations.",
-      "Our procurement practice includes advising on government contracting requirements, preparing bid responses, challenging and defending procurement decisions, and ensuring compliance with applicable procurement statutes and regulations.",
+      "Panza Maurer has decades of experience in handling large state and local bid and procurement matters. The firm consults with clients from the earliest stages of the procurement process including preparing for anticipated procurements, reviewing potential provisions to ensure a fair and balanced solicitation, solicitation specifications that are clear and concise, and navigating the potential contracting process.",
+      "We are also well versed in evaluating and assessing procurement submission requirements and collaborating with subject matter experts in developing the client's proposal. Early involvement is critical to understand the client's opportunity to provide requested services and how its proposal best meets the needs of the procuring entity. By directing attention to the evaluation criteria and contract terms, and participating in pre-bid and informational meetings, we are able to help craft client responses that are responsive and responsible, avoid disputes over submission and contract terms, and position clients for success.",
+      "Panza Maurer also has extensive experience in challenging and defending specifications, awards and rankings that are frequently part of the procurement process. We have experience in Chapter 120 bid challenge hearings held before the Division of Administrative Hearings as well as those in front of county and municipal government agencies and boards.",
+      "Through our comprehensive knowledge of Florida procurement law, our attorneys are particularly well-positioned to manage complex public procurements and bid protest proceedings, delivering strategic and favorable outcomes for clients across the State of Florida.",
     ],
   },
   "real-property": {
@@ -157,8 +161,8 @@ const practiceAreaData: Record<
     title: "Medical Marijuana",
     heading: "Medical Marijuana Law",
     content: [
-      "Our firm assists with navigating the governmental channels to obtain licenses in Florida's rapidly growing medical marijuana industry. Panza Maurer attorneys have played a key role in shaping Florida's medical marijuana regulatory framework.",
-      "We advise clients on licensing applications, regulatory compliance, operational requirements, and the evolving legal landscape governing medical marijuana cultivation, processing, and distribution in Florida.",
+      "Panza Maurer is an administrative and regulatory law firm focused on guiding clients through the complex legal framework governing medical marijuana in the State of Florida. We assist clients with every stage of the Medical Marijuana Treatment Center (MMTC) licensure process, providing strategic counsel on the administrative and operational requirements imposed by the Florida Department of Health (DOH). Our attorneys possess in-depth knowledge of Florida's evolving medical marijuana laws and regulations, as well as the practical industry insight necessary to navigate this highly regulated environment. With extensive experience across prior iterations of Florida's medical marijuana framework, we remain at the forefront of regulatory developments to position our clients for success.",
+      "Beyond licensure, Panza Maurer advises on the formation and structuring of compliant business entities to meet MMTC regulatory requirements. Our team provides ongoing corporate governance and compliance support, including contract development and negotiation, corporate reporting, and internal policy implementation. Panza Maurer counsels medical marijuana operators on a wide range of regulatory matters, including advertising and marketing restrictions, banking and financing considerations, employment and environmental compliance, federal and Florida marijuana policy, licensing and registration, real estate and zoning requirements, product labeling standards, privacy regulations, and corporate and commercial transactions. Through proactive regulatory guidance and comprehensive administrative representation, we help clients operate confidently and compliantly in Florida's medical marijuana industry.",
     ],
   },
 };

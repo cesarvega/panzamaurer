@@ -31,8 +31,8 @@ const partners: Attorney[] = [
   { name: "Louise Wilhite St. Laurent", role: "Partner", image: "louise-wilhite-st-laurent.png" },
   { name: "Samantha Evans Saltzburg", role: "Senior Associate", image: "samantha-evans-saltzburg.png" },
   { name: "Jennifer K. Graner", role: "Associate", image: "jennifer-k-graner.png" },
-  { name: "Andrew L. Myers", role: "Associate", image: "andrew-l-myers.png" },
-  { name: "Trevor D. Scott", role: "Associate", image: "trevor-d-scott.png" },
+  { name: "Andrew L. Myers", role: "Senior Associate", image: "andrew-l-myers.png" },
+  { name: "Trevor D. Scott", role: "Senior Associate", image: "trevor-d-scott.png" },
 ];
 
 const ofCounsel: Attorney[] = [

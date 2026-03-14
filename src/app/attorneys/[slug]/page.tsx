@@ -650,7 +650,7 @@ const attorneyData: Record<
   "andrew-l-myers": {
     name: "Andrew L. Myers",
     firstName: "Andrew",
-    role: "Associate",
+    role: "Senior Associate",
     image: "andrew-l-myers.png",
     education: [
       "J.D. from Tulane University School of Law (Sports Law specialization)",
@@ -659,18 +659,37 @@ const attorneyData: Record<
     barAdmissions: ["Florida"],
     courtAdmissions: [],
     professionalMemberships: [],
-    intro: "Andrew Myers supports clients throughout the business lifecycle \u2013 from entity formation and structuring to contract negotiation and day-to-day governance matters.",
+    intro: "Andrew (\"Andy\") Myers is a Senior Associate Attorney whose practice focuses on corporate, estate planning, and administrative and regulatory law, with extensive experience advising clients on matters involving business formation, estate formation and protection, and strategic legal planning across various industries.",
     sections: [
       {
-        title: "Corporate & Administrative Law",
+        title: "Corporate Law",
         content: [
-          "Andrew serves startups, small businesses, and mid-sized enterprises with entity structuring, operating agreements, shareholder agreements, and service contracts. In administrative and regulatory law, he advises clients on compliance with federal, state, and local administrative frameworks, including bid protests and rulemaking challenges.",
+          "Andy supports clients throughout the business lifecycle \u2013 from entity formation and structuring to contract negotiation and day-to-day governance matters. He has worked with startups, small businesses, and mid-sized enterprises across industries. Andy frequently assists clients with reviewing and drafting key corporate documents such as operating agreements, shareholder agreements, and service contracts. In his corporate practice, Andy draws on experience gained from clerking with boutique law firms focused on corporate transactions and intellectual property protection, as well as his education, background, and prior roles in the business and corporate sectors. His work often centers on mitigating risk while advancing clients\u2019 strategic goals, particularly in dynamic and fast-paced business environments.",
         ],
       },
       {
-        title: "Education and Background",
+        title: "Estate Planning",
         content: [
-          "Andrew earned his Juris Doctor from Tulane University School of Law, where he specialized in Sports Law, and his Bachelor of Arts in Business Administration, cum laude, from the University of Florida with a specialization in Sports Management and a Minor in Communication Studies.",
+          "Andy also provides legal assistance and counseling on estate planning matters. He assists individuals, families, and organizations with both will and trust-based planning documents, including wills, irrevocable and revocable trusts, durable powers of attorney, and healthcare directives and authorizations.",
+        ],
+      },
+      {
+        title: "Administrative and Regulatory Law",
+        content: [
+          "Andy\u2019s regulatory experience includes advising clients on compliance with federal, state, and local administrative frameworks. He has supported organizations through various administrative law proceedings, including bid protests and rulemaking challenges. He has also supported large non-profit organizations across various sectors with regulatory compliance.",
+        ],
+      },
+      {
+        title: "Sports Law and Industry Engagement",
+        content: [
+          "With a background in Sports Law, Andy brings specialized insight into the legal challenges facing sports organizations, athletes, and related businesses. At Tulane Law School, Andy was actively involved in the university\u2019s nationally recognized sports law program. He served as a board member and sponsorship chair for the Tulane Professional Basketball Negotiation Competition, worked as a labor and employment research assistant, and participated as a Tulane legal extern for a well-regarded law firm.",
+        ],
+      },
+      {
+        title: "Education & Background",
+        content: [
+          "Andy earned his Juris Doctor from Tulane University School of Law, where he specialized in Sports Law. He also graduated cum laude from the University of Florida with a Bachelor of Arts in Business Administration, a specialization in Sports Management, and a minor in Communication Studies. During law school, Andy clerked for several boutique law firms with practice areas including corporate law, intellectual property, and sports law. He also served as an in-house legal intern with a prominent sports and entertainment company, where he supported the legal team on matters involving contracts, compliance, and brand protection.",
+          "Andy has a 2-15 Life, Health, and Annuity License. He enjoys playing pickleball and traveling with his wife.",
         ],
       },
     ],
@@ -678,7 +697,7 @@ const attorneyData: Record<
   "trevor-d-scott": {
     name: "Trevor D. Scott",
     firstName: "Trevor",
-    role: "Associate",
+    role: "Senior Associate",
     image: "trevor-d-scott.png",
     education: [
       "J.D., cum laude, from Florida State University College of Law",
@@ -687,18 +706,13 @@ const attorneyData: Record<
     barAdmissions: ["Florida"],
     courtAdmissions: [],
     professionalMemberships: [],
-    intro: "Trevor D. Scott specializes in procurements, administrative law, and regulatory compliance, guiding clients through securing, maintaining, and defending competitive contracts and licenses.",
+    intro: "Trevor represents clients in administrative and regulatory matters at the federal, state, and local levels, including preparing petitions to challenge agency sanctions, advising on compliance with state healthcare and medical marijuana licensing requirements, and drafting public comments and variance applications in response to local ordinance changes.",
     sections: [
-      {
-        title: "Procurements",
-        content: [
-          "Trevor has supported a broad range of clients in navigating every stage of the competitive bidding process. He assists with government RFP responses in emergency management, construction, consulting, and staffing. His focus emphasizes compliance and strategic positioning for government contracting success.",
-        ],
-      },
       {
         title: "Administrative & Regulatory Law",
         content: [
-          "Trevor represents clients at federal, state, and local levels. His work includes preparing petitions to challenge agency sanctions, advising on compliance with state healthcare and medical marijuana licensing requirements, and drafting public comments and variance applications. He provides legal opinions and compliance strategies for healthcare, education, emergency management, and construction sectors.",
+          "Trevor represents clients in administrative and regulatory matters at the federal, state, and local levels, including preparing petitions to challenge agency sanctions, advising on compliance with state healthcare and medical marijuana licensing requirements, and drafting public comments and variance applications in response to local ordinance changes. He also represents clients in rulemaking disputes, including challenges to both emergency and standard rules promulgated by state agencies, and advises on strategic responses to agency rulemaking initiatives.",
+          "Trevor\u2019s experience extends to delivering formal legal opinions and compliance strategies on emerging regulatory issues for clients in the healthcare, education, emergency management, and public construction sectors. Whether developing policies to align with evolving regulations, engaging with agencies to resolve compliance issues, challenging unlawful agency action, or outlining regulatory pathways for innovative business models, Trevor works closely with clients to ensure they not only meet legal requirements but also advance their operational and strategic goals.",
         ],
       },
     ],
